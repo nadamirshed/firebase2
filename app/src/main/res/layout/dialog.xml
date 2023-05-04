@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:gba="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="10sp" android:textColor="@color/black"
+        android:text="please wait..." android:layout_centerHorizontal="true"
+        android:id="@+id/textViewwait"/>
+
+    <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/google_progress" gba:type="folding_circles"
+        android:layout_below="@id/textViewwait"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
